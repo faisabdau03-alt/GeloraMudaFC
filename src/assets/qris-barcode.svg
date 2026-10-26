@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 540" width="100%" height="100%">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Card Frame -->
+  <rect x="10" y="10" width="400" height="520" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" filter="url(#cardShadow)"/>
+
+  <!-- QRIS Red Header -->
+  <path d="M 10 30 C 10 19 19 10 30 10 L 390 10 C 401 10 410 19 410 30 L 410 70 L 10 70 Z" fill="#DC2626"/>
+  <text x="210" y="44" font-family="'Montserrat', 'Arial Black', sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">QRIS</text>
+  <text x="210" y="60" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#FEE2E2" text-anchor="middle" letter-spacing="1.5">STANDAR PEMBAYARAN &amp; DONASI NASIONAL</text>
+
+  <!-- Merchant Info -->
+  <text x="210" y="100" font-family="'Montserrat', sans-serif" font-size="18" font-weight="900" fill="#0F172A" text-anchor="middle">GELORA MUDA FC</text>
+  <text x="210" y="118" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#64748B" text-anchor="middle">NMID : ID1026024987654</text>
+  <text x="210" y="132" font-family="'Inter', sans-serif" font-size="10" font-weight="500" fill="#94A3B8" text-anchor="middle">Dana Swadaya &amp; Pengembangan Atlet Desa</text>
+
+  <!-- Clean QR Matrix Area -->
+  <g transform="translate(75, 145)">
+    <!-- QR Outer Box -->
+    <rect width="270" height="270" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" rx="8"/>
+
+    <!-- Top-Left Finder Pattern -->
+    <rect x="20" y="20" width="60" height="60" fill="#0F172A" rx="6"/>
+    <rect x="28" y="28" width="44" height="44" fill="#FFFFFF" rx="4"/>
+    <rect x="36" y="36" width="28" height="28" fill="#0F172A" rx="2"/>
+
+    <!-- Top-Right Finder Pattern -->
+    <rect x="190" y="20" width="60" height="60" fill="#0F172A" rx="6"/>
+    <rect x="198" y="28" width="44" height="44" fill="#FFFFFF" rx="4"/>
+    <rect x="206" y="36" width="28" height="28" fill="#0F172A" rx="2"/>
+
+    <!-- Bottom-Left Finder Pattern -->
+    <rect x="20" y="190" width="60" height="60" fill="#0F172A" rx="6"/>
+    <rect x="28" y="198" width="44" height="44" fill="#FFFFFF" rx="4"/>
+    <rect x="36" y="206" width="28" height="28" fill="#0F172A" rx="2"/>
+
+    <!-- Data Modules (Matrix dots) -->
+    <!-- Alignment Pattern -->
+    <rect x="160" y="160" width="30" height="30" fill="#0F172A" rx="3"/>
+    <rect x="166" y="166" width="18" height="18" fill="#FFFFFF" rx="2"/>
+    <rect x="171" y="171" width="8" height="8" fill="#0F172A" />
+
+    <!-- Timing Patterns -->
+    <rect x="90" y="44" width="8" height="8" fill="#0F172A" />
+    <rect x="110" y="44" width="8" height="8" fill="#0F172A" />
+    <rect x="130" y="44" width="8" height="8" fill="#0F172A" />
+    <rect x="150" y="44" width="8" height="8" fill="#0F172A" />
+    <rect x="170" y="44" width="8" height="8" fill="#0F172A" />
+
+    <rect x="44" y="90" width="8" height="8" fill="#0F172A" />
+    <rect x="44" y="110" width="8" height="8" fill="#0F172A" />
+    <rect x="44" y="130" width="8" height="8" fill="#0F172A" />
+    <rect x="44" y="150" width="8" height="8" fill="#0F172A" />
+    <rect x="44" y="170" width="8" height="8" fill="#0F172A" />
+
+    <!-- Data Blocks -->
+    <rect x="95" y="90" width="12" height="12" fill="#0F172A" />
+    <rect x="115" y="90" width="12" height="24" fill="#0F172A" />
+    <rect x="135" y="90" width="24" height="12" fill="#0F172A" />
+    <rect x="165" y="90" width="12" height="12" fill="#0F172A" />
+
+    <rect x="95" y="120" width="24" height="12" fill="#0F172A" />
+    <rect x="130" y="115" width="12" height="24" fill="#0F172A" />
+    <rect x="150" y="125" width="30" height="12" fill="#0F172A" />
+
+    <rect x="195" y="95" width="20" height="12" fill="#0F172A" />
+    <rect x="225" y="95" width="15" height="25" fill="#0F172A" />
+    <rect x="195" y="120" width="12" height="30" fill="#0F172A" />
+    <rect x="220" y="130" width="25" height="12" fill="#0F172A" />
+
+    <rect x="95" y="150" width="12" height="35" fill="#0F172A" />
+    <rect x="120" y="160" width="25" height="15" fill="#0F172A" />
+    <rect x="120" y="195" width="15" height="25" fill="#0F172A" />
+    <rect x="150" y="200" width="35" height="15" fill="#0F172A" />
+
+    <rect x="195" y="165" width="25" height="15" fill="#0F172A" />
+    <rect x="225" y="190" width="20" height="25" fill="#0F172A" />
+    <rect x="195" y="210" width="15" height="35" fill="#0F172A" />
+
+    <rect x="95" y="225" width="40" height="15" fill="#0F172A" />
+    <rect x="145" y="235" width="35" height="12" fill="#0F172A" />
+
+    <!-- Center Club Badge in QR -->
+    <rect x="110" y="110" width="50" height="50" rx="8" fill="#1A365D" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="135" cy="135" r="14" fill="#0D6EFD"/>
+    <text x="135" y="139" font-family="'Montserrat', sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" text-anchor="middle">GM</text>
+  </g>
+
+  <!-- Bottom App Support & Scanning Note -->
+  <rect x="35" y="430" width="350" height="44" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="210" y="448" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#0F172A" text-anchor="middle">MENDUKUNG SEMUA APLIKASI PEMBAYARAN</text>
+  <text x="210" y="463" font-family="'Inter', sans-serif" font-size="9" font-weight="500" fill="#64748B" text-anchor="middle">BCA • Mandiri • BRI • BNI • GoPay • OVO • DANA • ShopeePay</text>
+
+  <!-- Bottom Club Slogan -->
+  <text x="210" y="500" font-family="'Montserrat', sans-serif" font-size="10.5" font-weight="800" fill="#D4AF37" text-anchor="middle">SEDEKAH &amp; DUKUNGAN UNTUK PUTRA DESA</text>
+  <text x="210" y="515" font-family="'Inter', sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">Dicetak untuk Transparansi Kas Klub Sepak Bola Desa</text>
+</svg>

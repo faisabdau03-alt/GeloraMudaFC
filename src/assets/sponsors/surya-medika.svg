@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="100%" height="100%">
+  <g transform="translate(18, 16)">
+    <!-- Medical Plus & Sun rays -->
+    <rect x="18" y="4" width="10" height="38" rx="3" fill="#EF4444" />
+    <rect x="4" y="18" width="38" height="10" rx="3" fill="#EF4444" />
+    <circle cx="23" cy="23" r="5" fill="#FFFFFF" />
+  </g>
+  <text x="75" y="38" font-family="'Montserrat', sans-serif" font-size="16.5" font-weight="900" fill="#FFFFFF" letter-spacing="0.5">SURYA MEDIKA</text>
+  <text x="75" y="53" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#FCA5A5" letter-spacing="2">KLINIK &amp; FISIOTERAPI</text>
+</svg>

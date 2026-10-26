@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="100%" height="100%">
+  <g transform="translate(18, 16)">
+    <!-- Fast truck / arrow motion -->
+    <path d="M 4 20 L 26 20 L 34 28 L 34 38 L 4 38 Z" fill="#2563EB" />
+    <circle cx="12" cy="38" r="4" fill="#E2E8F0" />
+    <circle cx="28" cy="38" r="4" fill="#E2E8F0" />
+    <polygon points="26,22 32,28 26,28" fill="#93C5FD" />
+    <line x1="0" y1="24" x2="16" y2="24" stroke="#60A5FA" stroke-width="2" />
+    <line x1="2" y1="30" x2="12" y2="30" stroke="#60A5FA" stroke-width="2" />
+  </g>
+  <text x="75" y="38" font-family="'Montserrat', sans-serif" font-size="16.5" font-weight="900" fill="#FFFFFF" letter-spacing="0.5">KARYA LOGISTIK</text>
+  <text x="75" y="53" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#93C5FD" letter-spacing="2">ARMADA TRANSPORTASI</text>
+</svg>

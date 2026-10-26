@@ -338,14 +338,52 @@ export const CLUB_CONFIG = {
   // DATA SPONSOR & KEMITRAAN
   sponsors: {
     title: "MITRA & SPONSOR KAMI",
-    // Pengurus: Masukkan sponsor resmi jika sudah ada MOU/Kesepakatan.
-    // Jika array sponsorList kosong, website secara otomatis menampilkan empty state yang sopan & formulir ajakan kemitraan.
+    subtitle: "Didukung oleh para mitra usaha lokal & sahabat olahraga desa",
     sponsorList: [
-      // Contoh struktur jika sudah ada:
-      // { id: 1, name: "Toko Olahraga Jaya", logo: "/sponsors/logo-toko.png", tier: "Mitra Resmi" }
+      {
+        id: "sp-1",
+        name: "Prima Sport Apparel",
+        category: "Apparel & Jersey Resmi",
+        logo: "/sponsors/prima-sport.svg",
+        tier: "Mitra Utama"
+      },
+      {
+        id: "sp-2",
+        name: "Tirta Mulya",
+        category: "Hidrasi & Air Mineral Alami",
+        logo: "/sponsors/tirta-mulya.svg",
+        tier: "Mitra Hidrasi"
+      },
+      {
+        id: "sp-3",
+        name: "Berkah Tani",
+        category: "Agro Mandiri Desa",
+        logo: "/sponsors/berkah-tani.svg",
+        tier: "Sahabat UMKM"
+      },
+      {
+        id: "sp-4",
+        name: "Surya Medika",
+        category: "Klinik & Fisioterapi Tim",
+        logo: "/sponsors/surya-medika.svg",
+        tier: "Mitra Medis"
+      },
+      {
+        id: "sp-5",
+        name: "Warkop Pemuda",
+        category: "Komunitas & Nobar Warga",
+        logo: "/sponsors/warkop-pemuda.svg",
+        tier: "Sahabat Komunitas"
+      },
+      {
+        id: "sp-6",
+        name: "Karya Logistik",
+        category: "Armada Transportasi Laga",
+        logo: "/sponsors/karya-logistik.svg",
+        tier: "Mitra Transportasi"
+      }
     ],
-    // Pesan saat sponsor resmi masih dalam tahap pembukaan kemitraan
-    emptyStateMessage: "Gelora Muda FC saat ini membuka peluang sponsorship dan kemitraan strategis bagi pelaku usaha lokal, instansi, maupun perorangan yang ingin bersama-sama memajukan talenta olahraga generasi muda desa.",
+    partnershipInvitation: "Ingin brand atau usaha Anda berkembang bersama perjuangan Gelora Muda FC? Kami membuka pintu kemitraan untuk sponsor lokal, UMKM, dan institusi pendukung pemuda desa.",
     partnershipBenefits: [
       {
         id: "b1",
@@ -365,35 +403,18 @@ export const CLUB_CONFIG = {
     ]
   },
 
-  // DATA TRANSPARANSI KAS & DUKUNGAN KLUB
+  // DATA DUKUNGAN KLUB & BARCODE DONASI
   finance: {
     title: "DUKUNG GELORA MUDA FC",
-    subtitle: "Transparansi Kas & Kontribusi Nyata untuk Kemajuan Klub",
-    explanation: "Setiap bentuk kontribusi dan donasi dari warga, suporter, dan para donatur dipergunakan secara akuntabel untuk kebutuhan operasional klub: seragam pertandingan, bola berstandar, sewa lapangan latihan, perawatan medis cedera atlet, serta akomodasi laga.",
+    subtitle: "Salurkan Donasi & Dukungan Nyata untuk Kemajuan Klub Desa",
+    explanation: "Setiap kontribusi, sedekah, dan donasi dari Anda dialokasikan secara amanah 100% untuk pembinaan talenta muda, pengadaan bola berstandar, sewa lapangan latihan, perawatan medis cedera pemain, serta akomodasi tanding tim kebanggaan desa.",
     
-    // Status QRIS Resmi
-    // Jika qrisAvailable: false, tampilkan placeholder resmi tanpa membuat QR palsu!
-    qrisAvailable: false,
-    qrisPlaceholderImg: "/qris-placeholder.svg",
-    qrisNotice: "QRIS resmi atas nama rekening Gelora Muda FC sedang dalam proses administrasi perbankan. Silakan hubungi bendahara klub melalui WhatsApp resmi untuk konfirmasi dukungan.",
-    
-    // Ringkasan Keuangan Publik (Contoh Laporan yang Disetujui Pengurus)
-    summary: {
-      period: "Periode Oktober 2026",
-      verifiedBy: "Bendahara & Pengurus Harian Gelora Muda FC",
-      totalBalance: 4850000, // Saldo saat ini
-      totalIncome: 7500000,  // Total pemasukan
-      totalExpense: 2650000, // Total pengeluaran
-    },
-    
-    // Riwayat Pembukuan Transparan (Hanya kategori umum, bebas data sensitif pribadi)
-    publicLedger: [
-      { id: "tx-1", date: "10 Okt 2026", description: "Donasi Swadaya Tokoh & Pemuda Desa", category: "Donasi", type: "income", amount: 3000000 },
-      { id: "tx-2", date: "14 Okt 2026", description: "Iuran Bulanan Anggota Klub", category: "Iuran Anggota", type: "income", amount: 1500000 },
-      { id: "tx-3", date: "16 Okt 2026", description: "Pengadaan 5 Bola Standar Latihan & Pompa", category: "Peralatan", type: "expense", amount: 1250000 },
-      { id: "tx-4", date: "18 Okt 2026", description: "Logistik Air Mineral & Medis Laga Uji Coba", category: "Matchday", type: "expense", amount: 400000 },
-      { id: "tx-5", date: "22 Okt 2026", description: "Perlengkapan P3K, Es Terapi, & Koyo Cedera", category: "Medis", type: "expense", amount: 1000000 },
-    ]
+    // Barcode / QRIS Resmi
+    barcodeImg: "/qris-barcode.svg",
+    accountName: "GELORA MUDA FC",
+    bankName: "QRIS Nasional (Semua Bank & E-Wallet)",
+    notice: "Scan barcode langsung menggunakan aplikasi m-Banking (BCA, Mandiri, BRI, BNI) atau E-Wallet (GoPay, OVO, DANA, ShopeePay) pilihan Anda.",
+    confirmationNote: "Setelah berdonasi, Anda dapat mengirimkan bukti transfer sukarela ke Bendahara Klub via WhatsApp untuk pencatatan buku kas.",
   }
 };
 
