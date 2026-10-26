@@ -422,3 +422,4 @@ export function getWhatsAppLink(customMessage) {
   }
   return `https://wa.me/${number}?text=${message}`;
 }
+
