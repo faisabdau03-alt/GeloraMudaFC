@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gComBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A365D" />
+      <stop offset="60%" stop-color="#0B0E14" />
+      <stop offset="100%" stop-color="#05080E" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#gComBg)" />
+  <!-- Cheering crowd banners -->
+  <g opacity="0.3">
+    <!-- Banner hanging -->
+    <rect x="80" y="80" width="440" height="50" rx="4" fill="#0D6EFD" />
+    <text x="300" y="112" font-family="'Montserrat', sans-serif" font-size="18" font-weight="900" fill="#FFE885" text-anchor="middle" letter-spacing="4">GELORA MUDA BISA! DUKUNG SAKA DESA</text>
+  </g>
+  <!-- Villagers / Supporters cheering silhouettes with scarves -->
+  <g transform="translate(60, 200)">
+    <circle cx="60" cy="50" r="16" fill="#D4AF37" />
+    <rect x="45" y="70" width="30" height="70" rx="4" fill="#1E293B" />
+    <!-- Holding blue scarf high -->
+    <path d="M 20 20 L 100 20 L 95 35 L 25 35 Z" fill="#0D6EFD" stroke="#FFE885" stroke-width="1.5" />
+    <!-- Supporter 2 -->
+    <circle cx="150" cy="40" r="16" fill="#D4AF37" />
+    <rect x="135" y="60" width="30" height="80" rx="4" fill="#0D6EFD" />
+    <!-- Supporter 3 with drum -->
+    <circle cx="240" cy="55" r="16" fill="#D4AF37" />
+    <rect x="225" y="75" width="30" height="65" rx="4" fill="#1E293B" />
+    <ellipse cx="280" cy="90" rx="20" ry="15" fill="#FFE885" stroke="#78350F" stroke-width="2" />
+    <!-- Supporter 4 waving flag -->
+    <circle cx="360" cy="45" r="16" fill="#D4AF37" />
+    <rect x="345" y="65" width="30" height="75" rx="4" fill="#0D6EFD" />
+    <polygon points="370,10 430,30 370,50" fill="#0D6EFD" stroke="#FFE885" stroke-width="2" />
+    <line x1="370" y1="0" x2="370" y2="70" stroke="#FFF" stroke-width="3" />
+  </g>
+  <!-- Ground -->
+  <line x1="0" y1="340" x2="600" y2="340" stroke="#0D6EFD" stroke-width="2" opacity="0.6" />
+  <!-- Caption banner -->
+  <rect x="20" y="340" width="180" height="26" rx="4" fill="#0B0E14" stroke="#D4AF37" stroke-width="1" opacity="0.85" />
+  <text x="110" y="357" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFE885" text-anchor="middle">SEMANGAT WARGA DESA</text>
+</svg>

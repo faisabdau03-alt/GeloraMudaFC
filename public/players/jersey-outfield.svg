@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <!-- Background dramatic lighting -->
+    <radialGradient id="playerBgGrad" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#080C14" />
+    </radialGradient>
+    <radialGradient id="electricHalo" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#0D6EFD" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#0D6EFD" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0D6EFD" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldPlayerAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE885" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8D5B4C" />
+      <stop offset="100%" stop-color="#653E32" />
+    </linearGradient>
+    <linearGradient id="jerseyBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E40AF" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="480" fill="url(#playerBgGrad)" />
+  <circle cx="200" cy="200" r="160" fill="url(#electricHalo)" />
+
+  <!-- Stadium Floodlight lines -->
+  <line x1="0" y1="40" x2="400" y2="280" stroke="#0D6EFD" stroke-width="1" opacity="0.1" />
+  <line x1="400" y1="40" x2="0" y2="280" stroke="#0D6EFD" stroke-width="1" opacity="0.1" />
+
+  <!-- Player Silhouette & Jersey -->
+  <g transform="translate(0, 40)">
+    <!-- Head & Neck -->
+    <!-- Head Silhouette -->
+    <path d="M 160 110 C 160 70 175 45 200 45 C 225 45 240 70 240 110 C 240 140 226 155 200 155 C 174 155 160 140 160 110 Z" fill="url(#skinTone)" />
+    <!-- Athletic Short Hair -->
+    <path d="M 160 95 C 160 55 174 35 200 35 C 226 35 240 55 240 95 C 235 75 220 55 200 55 C 180 55 165 75 160 95 Z" fill="#18181B" />
+    <!-- Neck -->
+    <path d="M 184 145 L 216 145 L 222 185 L 178 185 Z" fill="url(#skinTone)" />
+
+    <!-- Jersey Collar Gold Trim -->
+    <path d="M 172 182 L 200 205 L 228 182" fill="none" stroke="url(#goldPlayerAccent)" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Shoulders and Torso (Gelora Muda Blue & Black Official Jersey) -->
+    <!-- Base Jersey Body -->
+    <path d="M 178 185 L 115 210 L 90 260 L 125 285 L 135 250 L 140 390 L 260 390 L 265 250 L 275 285 L 310 260 L 285 210 L 222 185 Z" fill="#0B0E14" />
+
+    <!-- Blue Vertical Stripes -->
+    <!-- Center-left Blue Stripe -->
+    <path d="M 165 190 L 165 390 L 188 390 L 188 198 Z" fill="#0D6EFD" />
+    <!-- Center-right Blue Stripe -->
+    <path d="M 212 198 L 212 390 L 235 390 L 235 190 Z" fill="#0D6EFD" />
+    <!-- Outer-left Blue Stripe -->
+    <path d="M 140 215 L 140 390 L 152 390 L 152 205 Z" fill="#0D6EFD" />
+    <!-- Outer-right Blue Stripe -->
+    <path d="M 248 205 L 248 390 L 260 390 L 260 215 Z" fill="#0D6EFD" />
+
+    <!-- Sleeve Gold Cuffs -->
+    <path d="M 90 260 L 125 285" stroke="url(#goldPlayerAccent)" stroke-width="5" stroke-linecap="round" />
+    <path d="M 310 260 L 275 285" stroke="url(#goldPlayerAccent)" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Arms -->
+    <path d="M 94 270 L 80 340 L 115 350 L 125 285 Z" fill="url(#skinTone)" />
+    <path d="M 306 270 L 320 340 L 285 350 L 275 285 Z" fill="url(#skinTone)" />
+
+    <!-- Miniature Gelora Muda FC Crest on Chest (Left side) -->
+    <g transform="translate(155, 230) scale(0.12)">
+      <path d="M 150 15 L 265 48 C 265 140 260 215 150 315 C 40 215 35 140 35 48 Z" fill="#D4AF37" stroke="#FFF" stroke-width="6"/>
+      <path d="M 150 30 L 250 58 C 250 135 245 200 150 290 C 55 200 50 135 50 58 Z" fill="#0D6EFD"/>
+      <circle cx="150" cy="150" r="45" fill="#FFF"/>
+    </g>
+
+    <!-- Subtle Center Jersey Watermark -->
+    <text x="200" y="305" font-family="'Montserrat', sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" opacity="0.15" text-anchor="middle" letter-spacing="4">GELORA MUDA</text>
+  </g>
+
+  <!-- Gold Bottom Accent Glow -->
+  <rect x="0" y="474" width="400" height="6" fill="url(#goldPlayerAccent)" />
+</svg>

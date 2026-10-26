@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803D" />
+      <stop offset="100%" stop-color="#052E16" />
+    </linearGradient>
+  </defs>
+  <path d="M 100 15 L 175 45 C 175 120 160 165 100 185 C 40 165 25 120 25 45 Z" fill="url(#pGreen)" stroke="#F59E0B" stroke-width="4"/>
+  <circle cx="100" cy="85" r="28" fill="#FFFFFF" stroke="#052E16" stroke-width="3"/>
+  <polygon points="100,75 108,82 105,92 95,92 92,82" fill="#052E16"/>
+  <path d="M 40 135 L 160 135 L 150 160 L 50 160 Z" fill="#F59E0B"/>
+  <text x="100" y="153" font-family="'Montserrat', sans-serif" font-size="14" font-weight="900" fill="#052E16" text-anchor="middle">PERSIKA</text>
+</svg>

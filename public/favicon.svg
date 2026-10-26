@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 340" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="shieldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A365D" />
+      <stop offset="40%" stop-color="#0F2445" />
+      <stop offset="100%" stop-color="#080D1A" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFE885" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#997A15" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="50%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+    <linearGradient id="electricBlueGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D6EFD" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0D6EFD" stop-opacity="0.8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Shield Shadow -->
+  <g filter="url(#softShadow)">
+    <!-- Outer Shield Frame (Gold) -->
+    <path d="M 150 15 
+             L 265 48 
+             C 265 140 260 215 150 315 
+             C 40 215 35 140 35 48 
+             Z" 
+          fill="url(#goldGradient)" 
+          stroke="url(#goldBorder)" 
+          stroke-width="3" />
+
+    <!-- Inner Shield (Dark Blue / Black) -->
+    <path d="M 150 25 
+             L 253 54 
+             C 253 138 248 206 150 298 
+             C 52 206 47 138 47 54 
+             Z" 
+          fill="url(#shieldBg)" />
+  </g>
+
+  <!-- Stripes in shield (Subtle Electric Blue & Dark Navy) -->
+  <g opacity="0.35">
+    <path d="M 115 42 L 140 46 L 140 286 C 131 280 123 273 115 264 Z" fill="#0D6EFD" />
+    <path d="M 160 49 L 185 53 L 185 264 C 177 273 169 280 160 286 Z" fill="#0D6EFD" />
+  </g>
+
+  <!-- Inner Gold Inset Line -->
+  <path d="M 150 34 
+           L 242 60 
+           C 242 134 238 196 150 282 
+           C 62 196 58 134 58 60 
+           Z" 
+        fill="none" 
+        stroke="url(#goldGradient)" 
+        stroke-width="1.8" 
+        stroke-dasharray="8, 3"
+        opacity="0.75" />
+
+  <!-- Stars at top -->
+  <g fill="url(#goldGradient)" filter="url(#glow)">
+    <!-- Center star -->
+    <polygon points="150,46 153,55 162,55 155,60 158,69 150,64 142,69 145,60 138,55 147,55" />
+    <!-- Left star -->
+    <polygon points="126,52 128.5,59 135,59 130,63 132,70 126,66 120,70 122,63 117,59 123.5,59" transform="scale(0.85) translate(22, 10)" />
+    <!-- Right star -->
+    <polygon points="174,52 176.5,59 183,59 178,63 180,70 174,66 168,70 170,63 165,59 171.5,59" transform="scale(0.85) translate(30, 10)" />
+  </g>
+
+  <!-- Soccer Ball in Center -->
+  <g transform="translate(150, 138)">
+    <!-- Ball Glow -->
+    <circle r="44" fill="#0D6EFD" opacity="0.3" filter="url(#glow)"/>
+    <!-- Ball Base -->
+    <circle r="40" fill="#F8FAFC" stroke="url(#goldGradient)" stroke-width="2.5" />
+    
+    <!-- Soccer Pentagons / Seams -->
+    <!-- Center pentagon -->
+    <polygon points="0,-14 13,-4 8,12 -8,12 -13,-4" fill="#0F172A" />
+    <!-- Connecting lines & outer patches -->
+    <!-- Top patch -->
+    <path d="M 0 -14 L 0 -26 M -7 -36 L 0 -26 L 7 -36" stroke="#0F172A" stroke-width="3" fill="none" />
+    <polygon points="-12,-40 12,-40 8,-28 -8,-28" fill="#0F172A" />
+    <!-- Right-top patch -->
+    <path d="M 13 -4 L 25 -8 M 36 -3 L 25 -8 L 29 -20" stroke="#0F172A" stroke-width="3" fill="none" />
+    <polygon points="28,-18 39,-6 38,10 27,2" fill="#0F172A" />
+    <!-- Right-bottom patch -->
+    <path d="M 8 12 L 18 20 M 16 32 L 18 20 L 30 18" stroke="#0F172A" stroke-width="3" fill="none" />
+    <polygon points="20,22 17,37 3,39 6,25" fill="#0F172A" />
+    <!-- Left-bottom patch -->
+    <path d="M -8 12 L -18 20 M -16 32 L -18 20 L -30 18" stroke="#0F172A" stroke-width="3" fill="none" />
+    <polygon points="-20,22 -17,37 -3,39 -6,25" fill="#0F172A" />
+    <!-- Left-top patch -->
+    <path d="M -13 -4 L -25 -8 M -36 -3 L -25 -8 L -29 -20" stroke="#0F172A" stroke-width="3" fill="none" />
+    <polygon points="-28,-18 -39,-6 -38,10 -27,2" fill="#0F172A" />
+
+    <!-- Ball Shine Overlay -->
+    <ellipse cx="-12" cy="-14" rx="16" ry="10" fill="#FFFFFF" opacity="0.3" transform="rotate(-30 -12 -14)" />
+  </g>
+
+  <!-- Banner Ribbon for GELORA MUDA -->
+  <g filter="url(#softShadow)">
+    <!-- Ribbon background fold -->
+    <path d="M 32 208 L 52 192 L 52 222 Z" fill="#78350F" />
+    <path d="M 268 208 L 248 192 L 248 222 Z" fill="#78350F" />
+    
+    <!-- Main Ribbon Plate -->
+    <path d="M 42 196 L 258 196 L 246 230 L 54 230 Z" 
+          fill="url(#goldGradient)" 
+          stroke="#FFFFFF" 
+          stroke-width="1.2" />
+
+    <!-- Inner decorative border on ribbon -->
+    <path d="M 48 200 L 252 200 L 242 226 L 58 226 Z" 
+          fill="none" 
+          stroke="#78350F" 
+          stroke-width="1" 
+          opacity="0.6" />
+          
+    <!-- GELORA MUDA Text -->
+    <text x="150" y="219" 
+          font-family="'Montserrat', 'Arial Black', sans-serif" 
+          font-size="18.5" 
+          font-weight="900" 
+          letter-spacing="2" 
+          fill="#0B0E14" 
+          text-anchor="middle">GELORA MUDA</text>
+  </g>
+
+  <!-- FC Sub-banner / Badge -->
+  <rect x="120" y="235" width="60" height="20" rx="4" fill="#0D6EFD" stroke="url(#goldGradient)" stroke-width="1.5" />
+  <text x="150" y="249.5" 
+        font-family="'Montserrat', 'Arial Black', sans-serif" 
+        font-size="12" 
+        font-weight="900" 
+        letter-spacing="3" 
+        fill="#FFFFFF" 
+        text-anchor="middle">FC</text>
+
+  <!-- Bottom Village Motto Ribbon / Text -->
+  <text x="150" y="278" 
+        font-family="'Inter', sans-serif" 
+        font-size="8.5" 
+        font-weight="700" 
+        letter-spacing="1.5" 
+        fill="#D4AF37" 
+        text-anchor="middle">SAKA DESA NGGO JUARA</text>
+</svg>

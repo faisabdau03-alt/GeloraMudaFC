@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="qrisCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <linearGradient id="qrisRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DC2626" />
+      <stop offset="100%" stop-color="#B91C1C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="400" height="480" rx="16" fill="url(#qrisCard)" stroke="#E2E8F0" stroke-width="2" />
+
+  <!-- QRIS Header Bar -->
+  <rect x="0" y="0" width="400" height="64" rx="16" fill="url(#qrisRed)" />
+  <rect x="0" y="44" width="400" height="20" fill="url(#qrisRed)" />
+
+  <!-- QRIS Text / National Standard -->
+  <text x="200" y="38" font-family="'Montserrat', 'Arial Black', sans-serif" font-size="24" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">QRIS</text>
+  <text x="200" y="53" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#FEE2E2" text-anchor="middle" letter-spacing="1">STANDAR PEMBAYARAN NASIONAL</text>
+
+  <!-- Merchant Name Info -->
+  <text x="200" y="95" font-family="'Montserrat', sans-serif" font-size="16" font-weight="800" fill="#0F172A" text-anchor="middle">GELORA MUDA FC</text>
+  <text x="200" y="114" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">NMID: (Menunggu Verifikasi Bank Mitra Klub)</text>
+
+  <!-- Placeholder QR Box -->
+  <rect x="65" y="130" width="270" height="270" rx="12" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6, 6" />
+
+  <!-- QR Scanning / Shield graphic in center -->
+  <g transform="translate(160, 200)">
+    <!-- Shield / Safe Icon -->
+    <path d="M 40 10 L 70 24 C 70 54 58 75 40 85 C 22 75 10 54 10 24 Z" fill="#0D6EFD" opacity="0.1" />
+    <path d="M 40 10 L 70 24 C 70 54 58 75 40 85 C 22 75 10 54 10 24 Z" fill="none" stroke="#0D6EFD" stroke-width="3" />
+    <!-- Lock / Checkmark -->
+    <path d="M 28 45 L 36 53 L 52 37" fill="none" stroke="#0D6EFD" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <text x="200" y="315" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#1E293B" text-anchor="middle">QRIS RESMI DALAM PROSES</text>
+  <text x="200" y="336" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">Kode QRIS resmi sedang disiapkan</text>
+  <text x="200" y="352" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">oleh Pengurus Kas &amp; Bendahara Klub</text>
+
+  <rect x="90" y="368" width="220" height="24" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" />
+  <text x="200" y="384" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#B45309" text-anchor="middle">Status: Verifikasi Administrasi</text>
+
+  <!-- Footer notice -->
+  <text x="200" y="430" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#0D6EFD" text-anchor="middle">Hubungi Bendahara Klub untuk Info Rekening</text>
+  <text x="200" y="448" font-family="'Inter', sans-serif" font-size="9.5" fill="#94A3B8" text-anchor="middle">Dicetak untuk Transparansi &amp; Akuntabilitas Klub Desa</text>
+</svg>

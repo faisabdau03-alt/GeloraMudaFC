@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Dark Stadion sky gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#04060A" />
+      <stop offset="35%" stop-color="#091222" />
+      <stop offset="70%" stop-color="#0A1833" />
+      <stop offset="100%" stop-color="#0B0E14" />
+    </linearGradient>
+
+    <!-- Stadium Floodlight Beams -->
+    <linearGradient id="lightBeamLeft" x1="15%" y1="0%" x2="45%" y2="85%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45" />
+      <stop offset="25%" stop-color="#0D6EFD" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#0D6EFD" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0D6EFD" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="lightBeamRight" x1="85%" y1="0%" x2="55%" y2="85%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45" />
+      <stop offset="25%" stop-color="#0D6EFD" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#0D6EFD" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0D6EFD" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Pitch Grass Gradient -->
+    <linearGradient id="pitchGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F281E" />
+      <stop offset="40%" stop-color="#091E16" />
+      <stop offset="100%" stop-color="#06120E" />
+    </linearGradient>
+
+    <!-- Gold Accent Beams -->
+    <linearGradient id="goldBeam" x1="50%" y1="20%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="centerPitchSpotlight" cx="50%" cy="80%" r="55%">
+      <stop offset="0%" stop-color="#0D6EFD" stop-opacity="0.28" />
+      <stop offset="50%" stop-color="#0D6EFD" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="lightGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Sky Canvas -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)" />
+
+  <!-- Stadium Structural Silhouettes in Background -->
+  <!-- Roof trusses -->
+  <path d="M 0 160 L 500 240 L 960 210 L 1420 240 L 1920 160 L 1920 0 L 0 0 Z" fill="#06090E" opacity="0.85" />
+  <path d="M 0 170 L 500 250 L 960 220 L 1420 250 L 1920 170" stroke="#0D6EFD" stroke-width="2" opacity="0.4" fill="none" />
+  
+  <!-- Stadium Stand Grandstands Silhouette -->
+  <polygon points="0,540 380,480 700,470 1220,470 1540,480 1920,540 1920,680 0,680" fill="#0A0F1A" opacity="0.9" />
+
+  <!-- Stadium Crowd Light Speckles -->
+  <g opacity="0.25">
+    <circle cx="280" cy="510" r="1.5" fill="#FFF" />
+    <circle cx="340" cy="520" r="1" fill="#38BDF8" />
+    <circle cx="480" cy="495" r="1.5" fill="#FFF" />
+    <circle cx="620" cy="485" r="1" fill="#FDE047" />
+    <circle cx="780" cy="480" r="1.5" fill="#FFF" />
+    <circle cx="1140" cy="480" r="1" fill="#FFF" />
+    <circle cx="1320" cy="490" r="1.5" fill="#38BDF8" />
+    <circle cx="1450" cy="515" r="1" fill="#FDE047" />
+    <circle cx="1620" cy="530" r="1.5" fill="#FFF" />
+  </g>
+
+  <!-- Massive Floodlight Pillars Left & Right -->
+  <!-- Left Floodlight Tower -->
+  <g transform="translate(180, 80)">
+    <!-- Tower Mast -->
+    <line x1="0" y1="20" x2="30" y2="440" stroke="#1E293B" stroke-width="8" />
+    <line x1="60" y1="20" x2="30" y2="440" stroke="#1E293B" stroke-width="8" />
+    <line x1="10" y1="100" x2="50" y2="100" stroke="#334155" stroke-width="4" />
+    <line x1="15" y1="200" x2="45" y2="200" stroke="#334155" stroke-width="4" />
+    <line x1="20" y1="300" x2="40" y2="300" stroke="#334155" stroke-width="4" />
+    <!-- Bank of Lights -->
+    <rect x="-10" y="0" width="80" height="25" rx="4" fill="#334155" />
+    <circle cx="5" cy="12" r="8" fill="#E0F2FE" filter="url(#lightGlow)" />
+    <circle cx="25" cy="12" r="8" fill="#E0F2FE" filter="url(#lightGlow)" />
+    <circle cx="45" cy="12" r="8" fill="#E0F2FE" filter="url(#lightGlow)" />
+    <circle cx="65" cy="12" r="8" fill="#E0F2FE" filter="url(#lightGlow)" />
+  </g>
+
+  <!-- Right Floodlight Tower -->
+  <g transform="translate(1680, 80)">
+    <line x1="0" y1="20" x2="30" y2="440" stroke="#1E293B" stroke-width="8" />
+    <line x1="60" y1="20" x2="30" y2="440" stroke="#1E293B" stroke-width="8" />
+    <line x1="10" y1="100" x2="50" y2="100" stroke="#334155" stroke-width="4" />
+    <line x1="15" y1="200" x2="45" y2="200" stroke="#334155" stroke-width="4" />
+    <line x1="20" y1="300" x2="40" y2="300" stroke="#334155" stroke-width="4" />
+    <!-- Bank of Lights -->
+    <rect x="-10" y="0" width="80" height="25" rx="4" fill="#334155" />
+    <circle cx="5" cy="12" r="8" fill="#E0F2FE" filter="url(#lightGlow)" />
+    <circle cx="25" cy="12" r="8" fill="#E0F2FE" filter="url(#lightGlow)" />
+    <circle cx="45" cy="12" r="8" fill="#E0F2FE" filter="url(#lightGlow)" />
+    <circle cx="65" cy="12" r="8" fill="#E0F2FE" filter="url(#lightGlow)" />
+  </g>
+
+  <!-- Projected Light Cones (Volumetric lighting) -->
+  <!-- Left Light Beam -->
+  <polygon points="210,95 750,1080 0,1080 0,600" fill="url(#lightBeamLeft)" />
+  <!-- Right Light Beam -->
+  <polygon points="1710,95 1920,600 1920,1080 1170,1080" fill="url(#lightBeamRight)" />
+  <!-- Center Golden Glow Angle -->
+  <polygon points="960,180 1350,1080 570,1080" fill="url(#goldBeam)" />
+
+  <!-- Pitch / Field Perspective -->
+  <polygon points="0,670 1920,670 1920,1080 0,1080" fill="url(#pitchGrad)" />
+  <rect x="0" y="670" width="1920" height="410" fill="url(#centerPitchSpotlight)" />
+
+  <!-- Field Markings in Perspective -->
+  <!-- Center Line -->
+  <line x1="0" y1="840" x2="1920" y2="840" stroke="#FFFFFF" stroke-width="3" opacity="0.3" />
+  <!-- Center Circle in perspective -->
+  <ellipse cx="960" cy="840" rx="360" ry="110" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.3" />
+  <circle cx="960" cy="840" r="5" fill="#FFFFFF" opacity="0.4" />
+
+  <!-- Touchline gold accent glow -->
+  <line x1="0" y1="670" x2="1920" y2="670" stroke="#D4AF37" stroke-width="2" opacity="0.6" />
+
+  <!-- Atmospheric Dark Vignette Overlay -->
+  <rect width="1920" height="1080" fill="black" opacity="0.45" />
+</svg>

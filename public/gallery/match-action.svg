@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gActBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E14" />
+      <stop offset="50%" stop-color="#1A365D" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+    <radialGradient id="gBallGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0D6EFD" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#gActBg)" />
+  <circle cx="300" cy="180" r="140" fill="url(#gBallGlow)" />
+  <!-- Pitch line -->
+  <line x1="0" y1="340" x2="600" y2="340" stroke="#D4AF37" stroke-width="2" opacity="0.4" />
+  <!-- Silhouette Player 1 (Striker kicking) -->
+  <path d="M 220 180 C 220 160 230 145 240 145 C 250 145 260 160 260 180 Z" fill="#D4AF37" />
+  <path d="M 215 190 L 265 185 L 290 280 L 330 250 L 270 310 L 235 340 L 220 280 Z" fill="#0D6EFD" opacity="0.9" />
+  <!-- Ball in Motion -->
+  <circle cx="360" cy="210" r="22" fill="#FFFFFF" stroke="#D4AF37" stroke-width="2" />
+  <polygon points="360,200 367,206 364,215 356,215 353,206" fill="#0B0E14" />
+  <!-- Motion streaks -->
+  <line x1="300" y1="230" x2="345" y2="215" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" opacity="0.7" />
+  <line x1="280" y1="245" x2="335" y2="225" stroke="#FFE885" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+  <!-- Caption banner overlay -->
+  <rect x="20" y="340" width="160" height="26" rx="4" fill="#0B0E14" stroke="#D4AF37" stroke-width="1" opacity="0.85" />
+  <text x="100" y="357" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFE885" text-anchor="middle">LIGA DESA • MATCHDAY</text>
+</svg>
